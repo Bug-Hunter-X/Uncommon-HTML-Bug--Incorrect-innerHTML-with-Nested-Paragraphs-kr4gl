@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+  <script>
+    // Incorrect way to set innerHTML with special characters
+    document.getElementById("myDiv").innerHTML = "<p>This is a <p>paragraph</p><p>with nested paragraphs</p>";
+  </script>
+</body>
+</html>
